@@ -1,0 +1,25 @@
+GET http://localhost:5000/players/
+
+###
+
+GET http://localhost:5000/players/2/
+
+###
+
+PUT http://localhost:5000/players/2/
+
+###
+
+GET http://localhost:5000/matches/2/
+
+###
+
+GET http://localhost:5000/players/2/matches/
+
+###
+
+GET http://localhost:5000/matches/2/players/
+
+###
+
+GET http://localhost:5000/players/2/playerScores
