@@ -70,7 +70,7 @@ app.put("/players/:playerId/", async (request, response) => {
   const { playerName } = request.body;
   const updatePlayerQuery = `UPDATE player_details SET player_name = '${playerName}' WHERE player_id = ${playerId};`;
   await db.run(updatePlayerQuery);
-  response.send("Plyer Details Updated");
+  response.send("Player Details Updated");
 });
 
 //Get Match Details API
@@ -104,3 +104,5 @@ app.get("/players/:playerId/playerScores", async (request, response) => {
   const playerStats = await db.get(playerStatsQuery);
   response.send(playerStats);
 });
+
+module.exports = app;
